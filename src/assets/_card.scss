@@ -1,0 +1,115 @@
+.card {
+  width: calc(33.3334% - 1.6rem);
+
+  display: inline-flex;
+  flex-direction: column;
+
+  border-radius: var(--radius-m, 0.8rem);
+  outline: 1px solid var(--color-brend-primary);
+  outline-offset: -1px;
+  overflow: hidden;  
+  cursor: pointer;
+
+  position: relative;
+
+  --img-height: 12.5rem;
+
+  &__img {
+    height: var(--img-height);
+    width: 100%;
+    object-fit: cover;
+
+    transition: 300ms ease-out;
+
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+
+  &__box {
+    height: 100%;
+
+    display: inline-flex;
+    flex-direction: column;
+
+    padding: 1.6rem;
+
+    transition: 300ms ease-out;
+
+    margin-top: var(--img-height);
+  }
+  &__title {
+    color: var(--link-link-color-default);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 120%;
+
+    margin-top: 0.8rem;
+  }
+  &__text {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: -0.01rem;
+
+    margin-top: 0.8rem;
+    margin-bottom: auto;
+  }
+
+  &__btn {
+    width: fit-content;
+    min-width: 4.4rem;
+    min-height: 1.4rem;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 0.7rem;
+    font-weight: 400;
+    line-height: 140%;
+    padding: 0.2rem 0.8rem;
+    border-radius: var(--radius-full);
+    background: var(--bg-bg-5);
+    border: none;
+
+    margin-top: 2rem;
+  }
+
+  &__date {
+    display: inline-flex;
+    align-items: flex-start;
+
+    color: var(--grey-color-black-30);
+    &-d {
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 100%;
+    }
+    &-my {
+      display: inline-flex;
+      flex-direction: column;
+
+      font-size: 0.75rem;
+      font-weight: 700;
+      line-height: 110%; 
+      letter-spacing: -0.0075rem;
+
+      margin-left: 0.2rem;
+    }
+  }
+
+  &:hover & {
+    &__img {
+      transform: translateY(-100%);
+      // top: -100%;
+    }
+    &__box {
+      transition: 450ms ease-out;
+
+      margin-top: 0;
+    }
+    &__text {
+    }
+  }
+}
