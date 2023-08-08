@@ -3,5 +3,12 @@
 *::after {
   box-sizing: border-box;
   margin: 0;
-  font-weight: normal;
 }
+
+:root {
+  font-size: 20px;
+  --grey-color-black-90: #17171A;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700&display=swap');
