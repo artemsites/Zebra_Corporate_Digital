@@ -9,6 +9,3 @@
       fill="#1D37AF" />
   </svg>
 </template>
-
-<script setup>
-</script>
