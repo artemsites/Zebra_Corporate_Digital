@@ -39,18 +39,16 @@ let showBtnLoadNextPage = ref(false)
 
 
 /**
- * При первой загрузке страницы 
- *   необходимо отправлять AJAX запрос на обработчик ([http://flems.github.io/test/api/news](http://flems.github.io/test/api/news/2/)/) и получать данные в виде JSON. 
- * 
+ * При первой загрузке страницы необходимо отправлять AJAX запрос на обработчик ([http://flems.github.io/test/api/news](http://flems.github.io/test/api/news/2/)/) и получать данные в виде JSON. 
  * Эти данные необходимо обработать и вывести новости на страницу. 
  */
 showPage(1)
-  .then(() => {
-    /**
-     * Проверяем есть ли возможность загрузить следующую страницу. Если есть, то показываем кнопку "Загрузить еще".
-     */
-    ifNextPageExistShowBtnLoadElseHide()
-  })
+.then(() => {
+  /**
+   * Проверяем есть ли возможность загрузить следующую страницу. Если есть, то показываем кнопку "Загрузить еще".
+   */
+  ifNextPageExistShowBtnLoadElseHide()
+})
 
 
 
@@ -59,10 +57,7 @@ async function showPage(num) {
   await fetch(`${API}/${num}`)
     .then(response => response.json())
     .then(data => {
-      console.log('data')
-      console.log(data)
       cards.value.push(...data.items)
-      // cards.value = data.items
       page.value.cur = data.nav.current
       page.value.total = data.nav.total
     })

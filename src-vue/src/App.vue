@@ -1,5 +1,5 @@
 <script setup>
-  import { /* RouterLink,  */RouterView } from 'vue-router'
+  import { RouterView } from 'vue-router'
   import IconLogo from '@/components/icons/IconLogo.vue'
   import Copyright from '@/components/Copyright.vue'
 </script>
