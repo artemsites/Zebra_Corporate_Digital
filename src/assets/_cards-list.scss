@@ -1,8 +1,30 @@
 .cards-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 
   padding-top: 3.2rem;
-  padding-top: 3.6rem;
+  padding-bottom: 3.6rem;
+
+  &__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &__show-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.8rem 1.6rem;
+    border-radius: 0.4rem;
+    border: 1px solid var(--button-button-bordered-default);
+    background-color: transparent;
+    color: var(--button-button-bordered-default);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 120%; 
+    letter-spacing: -0.01rem;
+
+    margin: 0.4rem auto 0;
+  }
 }
