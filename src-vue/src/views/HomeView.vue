@@ -3,7 +3,6 @@
     <Banner h1="Новости"/>
     
     <CardsList />
-    
   </main>
 </template>
 
