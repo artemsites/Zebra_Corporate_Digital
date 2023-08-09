@@ -1,5 +1,8 @@
-# Zebra_Corporate_Digital
-## Тестовое задание
-### Здесь prodaction в корне, a source в src-vue
+## Тестовое задание от Zebra Corporate Digital
+### В корне - prodaction, a в src-vue - vue код 
 
-[https://artemsites.github.io/Zebra_Corporate_Digital/](https://artemsites.github.io/Zebra_Corporate_Digital/)
+### Сайт: [https://artemsites.github.io/Zebra_Corporate_Digital/](https://artemsites.github.io/Zebra_Corporate_Digital/)
+
+#### Комментарии: 
+* Так как в макете не было мобильной версии и планшета - я подумал, что они не требуются, но адаптив я умею делать, можно посмотреть здесь artemsites.ru/portfolio
+* Ещё хочу добавить про себя, что записался на VueJS курс на 5 сентября: https://learn.javascript.ru/courses/vue
