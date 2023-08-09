@@ -53,7 +53,7 @@ showPage(1)
 
 
 async function showPage(num) {
-  if (num === 1) num = ''
+  if (num <= 1) num = ''
   await fetch(`${API}/${num}`)
     .then(response => response.json())
     .then(data => {
