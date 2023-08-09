@@ -38,15 +38,8 @@ let showBtnLoadNextPage = ref(false)
 
 
 
-/**
- * При первой загрузке страницы необходимо отправлять AJAX запрос на обработчик ([http://flems.github.io/test/api/news](http://flems.github.io/test/api/news/2/)/) и получать данные в виде JSON. 
- * Эти данные необходимо обработать и вывести новости на страницу. 
- */
 showPage(1)
 .then(() => {
-  /**
-   * Проверяем есть ли возможность загрузить следующую страницу. Если есть, то показываем кнопку "Загрузить еще".
-   */
   ifNextPageExistShowBtnLoadElseHide()
 })
 
