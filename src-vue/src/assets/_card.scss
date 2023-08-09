@@ -1,4 +1,5 @@
 @import './animations/fadeInSlideUp';
+@import './animations/fadeIn';
 
 .card {
   width: calc(33.3334% - 1.6rem);
@@ -34,6 +35,9 @@
     flex-shrink: 0;
 
     transition: 300ms ease-out;
+
+    animation-name: fadeIn;
+    animation-duration: 750ms;
 
     position: absolute;
     top: 0;
