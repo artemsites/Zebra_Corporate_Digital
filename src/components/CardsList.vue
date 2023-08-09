@@ -1,7 +1,7 @@
 <template>
   <section class="cards-list container">
     <div class="cards-list__box">
-      <article class="card" :class="{ '_no-img': !card.image }" v-for="card in cards" :key="card.code" :id="card.code">
+      <article class="card" :class="{ '_no-img': !card.image }" v-for="card in cards" :key="card.code">
         <img v-if="card.image" class="card__img" :src="card.image" :alt="card.name">
         <div class="card__box">
           <time datetime="2018-07-07" class="card__date">
