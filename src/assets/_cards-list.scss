@@ -25,6 +25,13 @@
     line-height: 120%; 
     letter-spacing: -0.01rem;
 
+    transition: 300ms;
+
     margin: 0.4rem auto 0;
+
+    &:hover {
+      background-color: var(--button-button-bordered-default);
+      color: white;
+    }
   }
 }
